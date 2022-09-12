@@ -1,0 +1,45 @@
+
+<app-adminnavbar></app-adminnavbar>
+
+<div class="container mt-5">
+    <div class="card">
+        <div class="row">
+
+      <div class="col-6"> 
+        <form #productForm="ngForm" (ngSubmit)="updateProductsByAdmin(productForm)">
+            
+            <label>Enter Id of the product</label>
+            <input class="w-100" type="text" name="id" placeholder="id" ngModel="id">
+               
+
+        <label>Enter Name of the product</label>
+        <input class="w-100" type="text" name="title" placeholder="title" ngModel="title">
+        <label>Enter Price of the product</label>
+        <input type="text"  class="w-100"name="price" placeholder="price" ngModel="price">
+        <label>Enter Discounted Price of the product</label>
+        <input type="text"  class="w-100"name="discount" placeholder="discount" ngModel="discount">
+       
+        <label>Enter Quantity of the product</label>
+        <input type="text"  class="w-100"name="quantity" placeholder="quantity" ngModel="quantity">
+       
+        <label>Enter category of the product</label>
+        <input type="text" class="w-100" name="category" placeholder="category" ngModel="category">
+        <div align="end">
+             <!-- <button class="btn btn-success" style="margin-right:5px;" (click)="clear()" >Clear</button> --> -->
+           
+            <button class="btn btn-success"  type="submit" >Add Product</button></div>
+        </form>
+        </div>
+     
+        <div class="col-6">
+                <!-- <input type="file" multiple value="select" (change)="onFileSelected($event)" >                     -->
+                </div>
+</div>
+    </div>
+</div> 
+
+
+
+
+
+

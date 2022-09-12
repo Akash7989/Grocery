@@ -1,0 +1,153 @@
+<div *ngIf="_router.url != '/login'">
+    <div *ngIf="_router.url != '/signup'">
+              <div *ngIf="_router.url != '/adminlogin'">
+                <div *ngIf="_router.url != '/cart'">
+                  <div *ngIf="_router.url != '/admin'">
+                    <div *ngIf="_router.url != '/adminlogin'">
+                      <div *ngIf="_router.url != '/me'">
+          <div *ngIf="_router.url != '/updatepassword'">
+            <div *ngIf="_router.url != '/changepassword'">
+              <div *ngIf="_router.url != '/userme'">
+                <div *ngIf="_router.url != '/admin'">
+                  <div *ngIf="_router.url != '/adminUpdateProducts'">
+                    <div *ngIf="_router.url != '/userchangepassword'">
+                      <div *ngIf="_router.url != '/userchangepassword'">
+                        <div *ngIf="_router.url != '/userchangepassword'">
+                          <div *ngIf="_router.url != '/after-cart'">
+                            <div *ngIf="_router.url != '/payment'">
+                              <div *ngIf="_router.url != '/about'">
+                                <div *ngIf="_router.url != '/adminGotList'">
+                                  <div *ngIf="_router.url != '/customerDetails'">
+                                    <!-- <div *ngIF="router.url!='/fruits-and-vegetables1"> -->
+                                        <div *ngIf="_router.url != '/adminPaymentVerification'">
+                                          <div *ngIf="_router.url != '/fruits-and-vegetables-admin'">
+
+
+  
+                                    
+  <div class="card-top container-fluid">
+    <div class="container d-flex">
+      <div class="item">
+  
+      </div>
+      <div class="item">
+        <a (click)="filter('')">
+          <img style ="width:62px;margin-top:5px;height:50px;"src="/assets/cart3.jpg" alt="">
+          <h6>All products</h6>
+        </a>
+        
+      </div>
+      <div class="item">
+        <a (click)="filter('grocery')" >
+          <img style ="width:62px;margin-top:5px;height:50px;"src="/assets/grains1.jpg" alt="">
+          <h6>Foodgrains</h6>
+        </a>
+        
+      </div>
+      <div class="item">
+        <a (click)="filter('fruits')">
+          <img style ="width:62px;margin-top:5px;height:50px;"src="/assets/fruits2.jpg" alt="">
+          <h6>Fruits</h6>
+        </a>
+        
+      </div> <div class="item">
+        <a (click)="filter('vegetables')">
+          <img style ="width:62px;margin-top:5px;height:50px;"src="/assets/vegetables2.jpg" alt="">
+          <h6>Vegetables</h6>
+        </a>
+        
+      </div>
+      
+      <div class="item">
+        <a (click)="filter('oil')">
+          <img style ="width:62px;margin-top:5px;height:50px;"src="/assets/oil.jpg" alt="">
+          <h6>Oil</h6>
+        </a>
+        
+      </div>
+      <div class="item">
+        <a (click)="filter('dairy1')">
+          <img style ="width:62px;margin-top:5px;height:50px;"src="/assets/dairy2.jpg" alt="">
+          <h6>Dairy</h6>
+        </a>
+        
+      </div>
+      <div class="item">
+        <a (click)="filter('snacks1')">
+          <img style ="width:62px;margin-top:5px;height:50px;"src="/assets/snacks1.jpg" alt="">
+          <h6>Snacks</h6>
+        </a>
+        
+      </div>
+      
+    </div>
+    </div>
+  
+  <div id=background7>
+    <!-- Section-->
+    <!-- <table>
+     
+   <tr><td> <button (click)="filter('')" class="btn-primary">All products</button></td>
+     <td> <button (click)="filter('fruits')" class="btn-primary">fruits</button></td>
+     <td> <button (click)="filter('vegetables')" class="btn-primary">vegetables</button></td>
+     <td><button (click)="filter('grocery')" class="btn-primary">food food-grains-and-masala</button></td>
+     
+   </tr></table> -->
+    <div class="container">
+     <div class="row">
+       <ng-container *ngFor="let item of filterCategory | filter:searchKey">
+   
+   <div class="card col-md-3">
+    <p>Hello</p>
+     <!-- <img src="{{item.image}}" alt=""> -->
+     <h5 style="white-space: nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100ch;">{{item.title}}</h5>
+     <p style="white-space: nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100ch;">{{item.description}}</p>
+     <form action="/action_page.php" (ngSubmit)="addtoCart(item)">
+       <!-- <label for="quantity" style="font-weight:bold"></label> -->
+       <!-- <select name="quantity" id="quantity">
+         <optgroup label="in kgs">
+           <option value="volvo">1</option>
+           <option value="saab">2</option>
+           <option value="saab">3</option>
+           <option value="saab">5</option> </optgroup> -->
+         <!-- <optgroup label="German Cars">
+           <option value="mercedes">Mercedes</option>
+           <option value="audi">Audi</option>
+         </optgroup> -->
+       <!-- </select>  <br><br> -->
+       <!-- <input type="submit" value="Submit"> -->
+       <button class="btn btn-success" type="submit" >Add to cart</button>
+       <!-- (click)="addtoCart(item)" -->
+   
+   
+     </form>
+     <p><strong>Price:</strong>Rs {{item.price}}/kg</p>
+   </div>  
+   
+   </ng-container>
+   
+    </div>
+    </div>
+   </div>
+    </div>
+   </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+                  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  

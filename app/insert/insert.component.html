@@ -1,0 +1,41 @@
+<div class="insertpop">
+    <form #insert="ngForm" (ngSubmit)="insertdetails(insert)">
+        <input type="text" name="id" id="id" ngModel="id">
+
+        <input type="text" name="username" id="username" ngModel="username">
+        <input type="text"  name="password" id="password" ngModel="password">
+        <input type="submit" value="Insert">
+    </form>
+</div>
+<div class="delete">
+    <form #deletename="ngForm" (ngSubmit)="deletedetails(deletename)">
+        <input type="text" name="id"id="id" ngModel="id">
+        <input type="submit" value="delete">
+    </form>
+</div>
+<div class="view">
+    
+    <h3>Selectig Data from table</h3>
+    <table border="2" text-align="center">
+        <tr>
+            <th>
+                id:
+            </th>
+            <th>
+                name:
+            </th>
+            <th>
+                password:
+            </th>
+
+        </tr>
+        <tbody>
+            <tr *ngFor="let p of players">
+                <td>{{p.id}}</td>
+                <td>{{p.username}}</td>
+                <td>{{p.password}}</td>
+                
+
+                
+            </tr>
+        </tbody>

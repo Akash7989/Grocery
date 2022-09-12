@@ -1,0 +1,15 @@
+.card img{
+    width: 200px;
+    height:200px;
+    margin-bottom: 15px;
+    transition:0.3s ease-in-out;
+  }
+  .item{
+    margin:0px 15px;
+    text-align:center;
+    padding-right:30px;
+  }
+  .item a:hover{
+    color:green;
+  }
+  

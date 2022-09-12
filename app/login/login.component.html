@@ -1,0 +1,107 @@
+
+
+<!-- Email input -->
+<!-- <div class="bgimg">
+  <div class="container">
+    <div class="row">
+      <div class="col-12"> -->
+        <div class="bgimg">
+  <table align="center">
+    <tr>
+      <td>
+         <div class="sign"><form class="p-4 p-md-5 border rounded-3 bg-light">
+          <div class="form-floating mb-3">
+               
+   <div class="form-outline mb-4">
+    <form #loginform="ngForm" (ngSubmit)="loginUser()"> <!--(ngSubmit)="insertdetails(insert)"-->  
+      <small class="text-danger">{{msg}}</small><br>
+      <!-- <small class="text-success">{{msg1}}</small>  -->
+      <label class="form-label" for="form2Example1">Email</label>
+      <input   type="email" [(ngModel)]="user.email" id="email" name="email"  class="form-control" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+      #email="ngModel">
+      <div *ngIf="email.invalid && email.touched"><small class="text-muted">Enter correct email</small></div>
+
+   <br><br>
+  
+    <!-- Password input -->
+    <label class="form-label" for="form2Example2">Password</label>
+
+      <input  required minlenth="4" type="password"[(ngModel)]="user.password" name="password" id="password" class="form-control" #password="ngModel" >
+      <div *ngIf="password.touched && password.invalid"><small class="text-danger">Passowrd should not be blank</small></div>
+    
+   <br>
+    <!-- 2 column grid layout for inline styling -->
+    <!-- <div class="row mb-4">
+      <div class="col d-flex justify-content-center"> -->
+        <!-- Checkbox -->
+        <!-- <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
+          <label class="form-check-label" for="form2Example31"> Remember me </label>
+        </div>
+      </div> -->
+  <br>
+      <!-- <div class="col"> -->
+        <!-- Simple link -->
+        <!-- <a href="" routerLink="/userme">Forgot password?</a> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <br>
+    <!-- Submit button -->
+    <button [disabled]="loginform.form.invalid" class="w-100 btn btn-lg btn-primary" type="submit"  ><span>Login</span></button>
+  </form>
+  
+  <br>
+    <!-- Register buttons -->
+    <div class="text-center">
+      <p>Not a member?<br>Click Home button and Signup First</p>
+        <!-- <p><br>Signup as New Customer</p>  -->
+      <!-- <button class="w-100 btn btn-lg btn-primary" type="submit" (click)="btnclick2()">Sign up</button> -->
+      <hr class="my-4">
+      <!-- <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small> -->
+     
+  
+      
+   
+  </div>
+
+</div>
+</div>
+
+ <!-- <input type="submit" class="btn btn-primary btn-block mb-4"  value="Login" > -->
+    <!-- (click)="shopsearch()"
+<input type="button" class(click)="btnclick1()">Login
+
+       -->
+<!--<div class="sign"><form class="p-4 p-md-5 border rounded-3 bg-light">
+  <div class="form-floating mb-3">
+    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+    <label for="floatingInput">Email address</label>
+  </div>
+  <div class="form-floating mb-3">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <label for="floatingPassword">Password</label>
+  </div>
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" value="remember-me"> Remember me
+    </label>
+  </div>--><!--<p>or sign up with:</p>
+      <button type="button" class="btn btn-link btn-floating mx-1">
+        <i class="fab fa-facebook-f"></i>
+      </button>
+  
+      <button type="button" class="btn btn-link btn-floating mx-1">
+        <i class="fab fa-google"></i>
+      </button>
+  
+   
+  
+    <button type="button" class="btn btn-link btn-floating mx-1">
+        <i class="fab fa-twitter"></i>
+      </button>
+  
+      <button type="button" class="btn btn-link btn-floating mx-1">
+        <i class="fab fa-github"></i>
+      </button>-->
+ 
+ 

@@ -1,0 +1,19 @@
+<table align =center class="storeKeeperDetail">
+<tr>
+  <td>
+    <form #insert="ngForm" (ngSubmit)="insertValues(insert)">
+      <input type="text" name="storename" id="storename" ngModel="storename">
+      <br><br>
+      <input type="text" name="ownername" id="ownername" ngModel="ownername">
+      <br><br>
+      <input type="text" name="fssai" id="fssai" ngModel="fssai">
+      <br><br>
+      <input type="text" name="contact" id="contact" ngModel="contact">
+      <br><br>
+      <input type="text" name="address" id="address" ngModel="address">
+     <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </td>
+</tr>
+</table>

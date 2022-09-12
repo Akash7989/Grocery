@@ -1,0 +1,31 @@
+.content-table{
+    border-collapse:collapse;
+    margin:25px 0;
+    font-size:0.9em;
+   width:100%;
+   border-right:2px solid green;
+   border-left:2px solid green;
+   border-top:2px solid green;
+
+
+}
+.content-table thead tr{
+    background-color:green;
+    color:#ffff;
+    text-align:left;
+    font-weight: bold;
+}
+.content-table th,
+.content-table td{
+    padding:12px 15px;
+}
+.content-table tbody tr{
+    border-bottom:1px solid #ddd;
+}
+.content-table tbody tr:nth-of-type(even)
+{
+    background-color: #f3f3f3;
+}
+.content-table tbody tr:last-of-type{
+    border-bottom:2px solid green;
+}

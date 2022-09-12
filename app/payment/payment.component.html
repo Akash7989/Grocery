@@ -1,0 +1,149 @@
+
+
+
+
+
+
+
+<div class="container">
+    <form #cash="ngForm" (ngSubmit)="pay(cash)">
+        <div class="row">
+            <div class="col">
+                <h3 class="title">Delivery Address</h3>
+                <!-- <div class="inputBox">
+                    <span>full name:</span>
+                    <input type="text" placeholder="name" name="name">
+
+                </div> -->
+                <div class="inputBox">
+                    <span>Address:</span><br>
+                    <input type="text"name="address" ngModel="address">
+                    <br>
+                    
+                </div>
+                <div class="inputBox">
+                    <span>Contact No:</span><br>
+                    <input type="text"name="contact" ngModel="contact">
+                    <br>
+                    
+                </div>
+                <div class="inputBox">
+                    <span>Delivery Date
+                    </span><br>
+                    <input type="date" name="delivery" ngModel="delivery">
+                    <br>
+                </div>
+                <div class="inputBox">
+                    <span>Total Amount
+                    </span><br>
+                   <h3><p class="mt-4">Rs:{{itemAmount}}</p></h3> 
+                    <br>
+                </div>
+
+            </div>
+            <div class="col">
+                <h3 class="title">Payment Details</h3>
+
+                <div class="inputBox">
+                    <span>Enter Account Holder Name</span><br>
+                    <input type="text" name="accountholdername" placeholder="name" ngModel="accountholdername">
+                    <br>
+                    
+                </div>
+                <div class="inputBox">
+                    <span>Cards Accepted</span><br>
+                    <img style ="width:100px;margin-top:5px;height:50px;"src="/assets/card1.jpg" alt=""><br>
+                    
+                </div>
+                <div class="inputBox">
+                    <span>Enter  Card number</span><br>
+                    <input type="text" name="cardnumber" ngModel="cardnumber"><br>
+                    
+                </div>
+                <div class="inputBox">
+                    <span>Enter cvv</span><br>
+                    <input type="text" name="cvv"required maxlength="3" ngModel="cvv">
+                    <br>
+
+                </div>
+                <div class="inputBox">
+                    <span>Enter expiry</span><br>
+                    <input type="month" name="expiry" ngModel="expiry"><br>
+                    
+                </div>
+                
+
+            </div>
+        </div>
+        <br>
+        <button class="btn btn-dark" style ="width:100%;height:50px" type="submit" >pay</button>
+    </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div>
+    <form #cash="ngForm" (ngSubmit)="pay(cash)">
+    <h2>Enter Account Holder name</h2>
+    <input type="text" name="accountholdername" placeholder="name" ngModel="accountholdername">
+    <h2>Enter 16-Digit Card number</h2>
+    <input type="text" name="cardnumber" ngModel="cardnumber">
+    <h2>Enter CVV number</h2>
+    <input type="text" name="cvv"required maxlength="3" ngModel="cvv">
+    <h2>Enter expiry:</h2>
+    <input type="month" name="expiry" ngModel="expiry">
+    <h2>Enter delivery</h2>
+     <input type="date" name="delivery" ngModel="delivery">
+        <h2>Enter Address</h2>
+        <input type="text"name="address" ngModel="address">
+        <h2>Enter Contact</h2>
+        <input type="text"name="contact" ngModel="contact">
+    <p class="mt-4">Amount due : <a class="font-semibold" href="#"><i class="fa fa-ruppee"></i> {{itemAmount}}</a></p>
+    
+    <button type="submit" class="btn-primary">
+        Pay
+    </button>
+    
+    <button type="button" class="btn-primary" routerLink="/usermenu" routerLinkActive="active">
+       Cancel
+    </button>
+
+</form> -->
+<!-- </div> -->

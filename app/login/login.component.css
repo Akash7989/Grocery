@@ -1,0 +1,23 @@
+
+#form2Example2{
+    margin-left:15px;
+}
+#submit{
+    margin-left:100px;
+    text-align:center;
+    color:black;
+    background-color:rgb(62, 180, 227);
+}/* }#background11{
+     */
+/* background-color:rgb(255, 179, 0);  
+    /* background-image:url("../../assets/cart.jpg"); */
+    /* background-size:100%;
+    height:100%;
+    background-size:cover;
+} */ 
+.bgimg {
+    background-image: url('../../assets/groceryimg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}

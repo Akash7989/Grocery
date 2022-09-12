@@ -1,0 +1,27 @@
+
+
+.dropdown, .dropleft, .dropright, .dropup {
+    position: relative;
+}
+.btn btn-success{
+color:rgba(255, 255, 255, 0.8);
+}
+.btn-btn-success{
+    color:rgba(255, 255, 255, 0.8);
+    
+    }
+    .form-control{
+        border-radius:3px;
+        width:600px;
+        margin-left:20px;
+    
+    }
+    .search-icon{
+        position:absolute;
+        z-index:10;
+        right:54%;
+        top:20%;
+        margin-top:0.5%;
+        color:blue;
+    }
+    

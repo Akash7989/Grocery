@@ -1,0 +1,120 @@
+<app-adminnavbar></app-adminnavbar>
+<div class="row">
+    <div class="col-6">
+<ng-container>
+    <table class="content-table">
+            <thead>
+                <h3>Ordered Items</h3>
+                <tr>
+                    <th>SI.No</th>
+                    <th>ProductName</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>UserEmail</th>
+                    <!-- <td>Delete</td> -->
+                                        
+
+                </tr>
+            </thead>
+            <tbody>
+                    <tr *ngFor="let item of filterCategory | filter:searchKey;let i=index ">
+                        <td>{{i+1}}</td>
+                        <td>{{item.title}}</td>
+                        <!-- <td><img style="width:120px;" src="{{item.image}}" alt=""></td> -->
+                        <!-- <th style="width: 12%">{{item.quantity}}</th> -->
+                         <td>{{item.quantity}}</td>
+                         <td>{{item.price}}</td>
+                        <td>{{item.email}}</td>
+                        
+                        <!-- <td>
+                            <button class="btn btn-danger" (click)="delete(item.id)"><i class="fas fa-trash-alt"></i>
+                            </button>
+                        </td> -->
+                     </tr>
+               
+            </tbody>
+        </table>
+        </ng-container>
+    </div>
+    <div class="col-6">    
+        <ng-container>
+
+        <table  class="content-table" align="right">
+
+            <thead><h3>Customer Details</h3>
+                <tr>
+                <th>Username</th>
+                <th>email</th>
+            <th>Contact</th>    </thead>
+
+
+            <tbody>
+            <tr *ngFor="let item1 of filterCategory1 | filter :searchKey; let i1=index">
+        <td>{{item1.username}}</td>
+    <td>{{item1.email}}</td>
+    <td>{{item1.contact}}</td>
+</tr>
+    
+    
+        </tbody>
+ 
+
+        </table>
+    </ng-container>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+<!-- <div align="left">
+
+
+
+    
+  
+
+<form #customer="ngForm" (ngSubmit)="check(customer.value)">
+    <input type="text" name="email" id="email" ngModel="email">
+
+<br>
+<input type="submit" value="ViewbyId">
+</form>
+<table border="2">
+     <thead border="2">  <tr>
+            
+            <th> Contact Number</th>
+            <th> Registered Email</th>
+            <th> password</th>
+            <th> username</th>
+            </tr>
+    </thead>   
+      <tbody> 
+        <tr >            
+            <td> {{players.id}} </td>
+            <td> {{customerDetails.contact}} </td>
+            <td> {{customerDetails.email}} </td>
+            <td> {{customerDetails.password}} </td>
+            <td> {{customerDetails.username}} </td>
+
+
+            
+
+               </tr>
+       </tbody>    </table> </div>-->
+ 
